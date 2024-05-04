@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2024-02-29T13:16:08.042Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36" etag="RXsBJ7Nn6so1ZoCtLXYv" version="23.1.4" type="device">
+  <diagram name="Страница — 1" id="k_3xN_DXI4NE3zi3pacX">
+    <mxGraphModel dx="1557" dy="1066" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HwnGK5gBZpHTWM9pleer-1" value="human" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-26" y="82" width="160" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-2" value="+id PRIMARY KEY&lt;br&gt;+name&lt;br&gt;+is_woman" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="HwnGK5gBZpHTWM9pleer-1" vertex="1">
+          <mxGeometry y="50" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-3" value="hair" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-279" y="264" width="160" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-4" value="+id PRIMARY KEY&lt;br&gt;+hair_specialty&lt;br&gt;+color" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="HwnGK5gBZpHTWM9pleer-3" vertex="1">
+          <mxGeometry y="50" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-5" value="state" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="111" y="-69" width="189" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-6" value="+id PRIMARY KEY&amp;nbsp;&lt;br&gt;+name&lt;br&gt;+effect_on_metabolism_specialty&lt;br&gt;+description" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="HwnGK5gBZpHTWM9pleer-5" vertex="1">
+          <mxGeometry y="50" width="189" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-7" value="action" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="72" y="267" width="160" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-8" value="+id PRIMARY KEY&lt;br&gt;+name&lt;br&gt;+location&amp;nbsp;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="HwnGK5gBZpHTWM9pleer-7" vertex="1">
+          <mxGeometry y="50" width="160" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-9" value="appearance&amp;nbsp;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-300" y="27" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-10" value="+id PRIMARY KEY&lt;br&gt;+hair&lt;br&gt;+skin_specialties&amp;nbsp;&lt;br&gt;+body_composition&lt;br&gt;+general_description" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="HwnGK5gBZpHTWM9pleer-9" vertex="1">
+          <mxGeometry y="50" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-11" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERoneToMany;rounded=0;startSize=8;endSize=8;" parent="1" source="HwnGK5gBZpHTWM9pleer-2" target="HwnGK5gBZpHTWM9pleer-7" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-413" y="417" as="sourcePoint" />
+            <mxPoint x="-313" y="317" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-12" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERoneToMany;rounded=0;startSize=8;endSize=8;" parent="1" source="HwnGK5gBZpHTWM9pleer-9" target="HwnGK5gBZpHTWM9pleer-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-50" y="84" as="sourcePoint" />
+            <mxPoint x="50" y="-16" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-13" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;startSize=8;endSize=8;" parent="1" source="HwnGK5gBZpHTWM9pleer-3" target="HwnGK5gBZpHTWM9pleer-10" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-309" y="438" as="sourcePoint" />
+            <mxPoint x="-209" y="338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HwnGK5gBZpHTWM9pleer-14" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERoneToMany;rounded=0;startSize=8;endSize=8;" parent="1" source="HwnGK5gBZpHTWM9pleer-1" target="HwnGK5gBZpHTWM9pleer-6" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="278" y="86" as="sourcePoint" />
+            <mxPoint x="393" y="-47" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
