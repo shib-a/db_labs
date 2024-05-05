@@ -1,0 +1,10 @@
+CREATE TYPE effect_enum AS ENUM('Slowed','Accelerated','No effect');
+CREATE TYPE body_composition_enum AS ENUM('Lean','High muscle tone','Low muscle tone','Average muscle tone');
+CREATE TABLE IF NOT EXISTS action (id SERIAL PRIMARY KEY , name VARCHAR(200) NOT NULL, location TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS hair (id SERIAL PRIMARY KEY , hair_specialty TEXT NOT NULL, color VARCHAR(50) NOT NULL);
+CREATE TABLE IF NOT EXISTS state (id SERIAL PRIMARY KEY , state_name VARCHAR(100) UNIQUE NOT NULL, effect_on_metabolism effect_enum NOT NULL,state_description TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS human (id SERIAL PRIMARY KEY , name VARCHAR(100) NOT NULL, is_woman BOOLEAN DEFAULT false);
+CREATE TABLE IF NOT EXISTS human_state (id SERIAL PRIMARY KEY , state_id INTEGER, human_id INTEGER, time TIME NOT NULL, FOREIGN KEY (human_id) REFERENCES human(id), FOREIGN KEY (state_id) REFERENCES state(id));
+CREATE TABLE IF NOT EXISTS appearance(id SERIAL PRIMARY KEY , hair_id INTEGER, skin_specialties TEXT, body_composition body_composition_enum NOT NULL, general_description TEXT NOT NULL, FOREIGN KEY (hair_id) REFERENCES hair(id));
+CREATE TABLE IF NOT EXISTS human_action(id SERIAL PRIMARY KEY , action_id INTEGER, human_id INTEGER, time TIMESTAMP NOT NULL, FOREIGN KEY (action_id) REFERENCES  action(id), FOREIGN KEY (human_id) REFERENCES human(id));
+CREATE TABLE IF NOT EXISTS human_appearance(id SERIAL PRIMARY KEY , human_id INTEGER, appearance_id INTEGER, FOREIGN KEY (human_id) REFERENCES human(id), FOREIGN KEY (appearance_id) REFERENCES appearance(id));
